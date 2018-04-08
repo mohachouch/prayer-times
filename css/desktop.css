@@ -74,7 +74,7 @@ body {
 }
 
 .joumouaa, .custom-time{
-    padding-top: 40px;
+    padding-top: 80px;
     font-size: 500%;
 }
 
@@ -88,7 +88,7 @@ body {
 }
 
 .time{
-    font-size: 1600%;
+    font-size: 1300%;
 }
 
 .gregorianDate, .hijriDate{
