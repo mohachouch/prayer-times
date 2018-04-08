@@ -956,4 +956,4 @@ var douaaSlider = {
 };
 
 prayer.init();
-prayer.test();
+//prayer.test();
