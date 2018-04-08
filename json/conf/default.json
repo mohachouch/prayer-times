@@ -16,7 +16,7 @@
     "douaaAfterPrayerWait": [11, 9, 9, 9, 10],
     "prayerTimesFixing": ["", "", "", "", ""],
     "hijriAdjustment": 0,
-    "hijriDateEnabled": true,
+    "hijriDateEnabled": false,
     "douaaAfterAdhanEnabled": true,
     "douaaAfterPrayerEnabled": true,
     "qrcodeEnabled": true,
