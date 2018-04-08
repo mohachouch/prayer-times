@@ -725,13 +725,13 @@ var prayer = {
      * Set QR code
      */
     setQRCode: function () {
-        if (prayer.confData.qrcodeEnabled === true) {
+       /* if (prayer.confData.qrcodeEnabled === true) {
             new QRCode("qrcode", {
                 text: prayer.confData.site,
                 width: 100,
                 height: 100
             });
-        }
+        }*/
     },
     /**
      * Play a sound
