@@ -101,7 +101,7 @@ body {
 
 .prayer-text {
     font-size: 580%;
-    border-top: 1px #fff solid;
+    /*border-bottom: 1px #fff solid;*/
 } 
 
 .prayer-text .text, 
@@ -122,7 +122,7 @@ body {
 
 .prayer-wait .wait{
     font-size: 580%;
-    border-bottom: 1px #fff solid;
+    /*border-bottom: 1px #fff solid;*/
 }
 
 .prayer-hilighted {
@@ -222,7 +222,7 @@ body {
 .footer{
     font-size: 200%;
     position: absolute;
-    bottom: 5px;
+    bottom: 0px;
     left: 0;
     right:0;
 }
