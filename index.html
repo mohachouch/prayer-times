@@ -8,149 +8,72 @@
         <link href="css/desktop.css?<version>" rel="stylesheet">
         <link href="css/douaa-slider.css?<version>" rel="stylesheet">
         <link rel="icon" href="favicon.png" />
+<style>
+.mySlides {display:none;}
+</style>
     </head>
-    <body class="text-center">
-
-        <div class="spinner"></div>
-
-        <div class="desktop hidden-xs hidden-sm hidden-md">
-
-            <!-- Iqama screen -->
-            <div class="iqama hidden">
-                <div class="top ar" data-text="iqama">El-iqama</div>
-                <div class="image"></div>
-                <div class="bottom ar" data-text="power-off-phones"></div>
-            </div>
-
-            <!-- Adhan screen -->
-            <div class="adhan display-none">
-                <div class="ar">
-                    <div class="title">دعاء ما بعد الأذان</div>
-                    اللّهُـمَّ رَبَّ هَذِهِ الدّعْـوَةِ التّـامَّة وَالصّلاةِ القَـائِمَة آتِ محَـمَّداً الوَسيـلةَ وَالْفَضـيلَة وَابْعَـثْه مَقـامـاً مَحـموداً الَّذي وَعَـدْتَه 
+    <body>
+	<div class="desktop hidden-xs hidden-sm hidden-md">
+			<div class="main display-none">
+				 <div class="top-content">
+                     <div class="col-lg-6" style="text-align:left">
+                            <div class="time" style="font-size:900%;"></div>
+                        </div>
+						 <div class="col-lg-6" style="text-align:right; padding-top:30px;">
+                            <div class="gregorianDate" style="font-size:300%;"></div>
+                            <div class="hijriDate" style="font-size:300%;"></div>
+                        </div>
                 </div>
-
-                <div class="fr">
-                    <div class="title">Invocation après l'adhân</div>
-                    <p style="font-size: 90%">
-                        Ô Allah, Maître de cet appel parfait et de la prière que l'on va accomplir, donne à Mohammed le pouvoir d'intercéder 
-                        (le Jour du Jugement) et la place d'honneur [au Paradis], et ressuscite-le dans la position louable que Tu lui as promise
-                    </p>
-                </div>
-            </div>
-
-            <div class="douaa-between-adhan-iqama display-none">
-                <div class="ar">
-                    <div class="title">الدعاء لا يرد بين الأذان والإقامة</div>
-                    عَنْ أَنَسِ بْنِ مَالِكٍ قَالَ: قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: الدُّعَاءُ لَا يُرَدُّ بَيْنَ الْأَذَانِ وَالْإِقَامَةِ
-                </div>
-
-                <div class="fr">
-                    <div class="title">Les invocations entre le Adhân et l’Iqâmah ne sont pas rejetées</div>
-                    Selon Anas Ibn Mâlik, le Prophète (sallallahu ‘alayhi wa sallam) a dit : « Les invocations entre l'Adhân et l’Iqâmah ne sont pas rejetées»
-                </div>
-            </div>
-
-            <div class="jumua-dhikr-reminder display-none">
-                <div class="ar">
-                    <div class="title">حان وقت صلاة الجمعة</div>
-                    عَنْ أَبِي هُرَيْرَةَ قَالَ قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهم عَلَيْهِ وَسَلَّمَ مَنْ تَوَضَّأَ فَأَحْسَنَ الْوُضُوءَ ثُمَّ أَتَى الْجُمُعَةَ فَاسْتَمَعَ وَأَنْصَتَ غُفِرَ لَهُ مَا بَيْنَهُ وَبَيْنَ الْجُمُعَةِ وَزِيَادَةُ ثَلاثَةِ أَيَّامٍ وَمَنْ مَسَّ الْحَصَى فَقَدْ لَغَا
-                </div>
-
-                <div class="fr">
-                    Le Prophète (que la prière d'Allah et son salut soient sur lui) a dit « Celui qui fait les ablutions parfaitement puis se rend au jumu'a puis écoute et se tait, il lui est pardonné ce qu'il y a entre ce moment et le vendredi suivant et trois jours en plus et celui qui touche des cailloux a certes fait une futilité
-                </div>
-            </div>
-
-            <!-- Douaa after prayer slider -->
-            <div class="douaa-after-prayer display-none"></div>
-
-            <!-- main screen -->
-            <div class="main display-none">
-                <!--<div class="header col-lg-offset-1 col-lg-10 ar"></div> 
-                <div class="col-lg-1 text-right" >
-                    <a href="configure.html">
-                        <span class="glyphicon glyphicon-cog settings"></span> 
-                    </a>
-                </div>-->
-
-                <div class="top-content">
-                    <div class="adhan-flash hidden">
-                        <div class="col-lg-2">
-                            <img src="img/loudspeaker.png">
-                        </div>
-                        <div class="col-lg-8">
-                            <span class="ar" data-text="adhan"></span>
-                        </div>
-                        <div class="col-lg-2">
-                            <img src="img/loudspeaker.png" style="transform: scaleX(-1);">
-                        </div>
-                    </div>
-                    <!-- Alarm flash -->
-                    <div class="alarm-flash hidden">
-                        <div class="col-lg-2">
-                            <img src="img/loudspeaker.png">
-                        </div>
-                        <div class="col-lg-8">
-                            <span class="ar" data-text="alarm"></span>
-                        </div>
-                        <div class="col-lg-2">
-                            <img src="img/loudspeaker.png" style="transform: scaleX(-1);">
-                        </div>
-                    </div>
-
-                    <div class="content">
-                        <div class="col-lg-3 aid custom-time">
-                            <div class="ar" data-text="aid-prayer"></div>
-                            <div class="aid-id"></div>
-                        </div>
-                        <div class="col-lg-3 chourouk custom-time">
-                            <div class="ar" data-text="chourouk"></div>
-                            <div class="chourouk-id"></div>
-                        </div>
-                        <div class="col-lg-3 imsak custom-time">
-                            <div class="ar" data-text="imsak"></div>
-                            <div class="imsak-id"></div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="time"></div>
-                            <div class="hijriDate"></div>
-                            <div class="gregorianDate"></div>
-                        </div>
-                        <div class=" col-lg-3 joumouaa">
-                            <div class="ar" data-text="joumouaa"></div>
-                            <div class="prayer joumouaa-id"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="prayer-content">
-                    <div class="prayer-text">
-                        <div class="text _0 ar" data-text="sobh"></div>
-                        <div class="text _1 ar" data-text="zuhr"></div>
-                        <div class="text _2 ar" data-text="asr"></div>
-                        <div class="text _3 ar" data-text="maghrib"></div>
-                        <div class="text _4 ar" data-text="isha"></div>
-                    </div>
-
-                    <div class="prayer-time">
-                        <div class="sobh prayer"></div>
-                        <div class="dohr prayer"></div>
-                        <div class="asr prayer"></div>
-                        <div class="maghrib prayer"></div>
-                        <div class="ichaa prayer"></div>
-                    </div>
-
-                    <div class="prayer-wait">
-                        <div class="wait _0"></div>
-                        <div class="wait _1"></div>
-                        <div class="wait _2"></div>
-                        <div class="wait _3"></div>
-                        <div class="wait _4"></div>
-                    </div>
+				
+				<div class="w3-content" style="text-align:center;">
+ <div class="mySlides">
+	<img class="qr-code" src="img/logo.svg" height="250px" align="center">
+    <h1><b>Mosquée IDA</b></h1>
+    <h4>www.mosquee-ida.fr</h4>
+  </div>
+  
+ <div class="mySlides">
+	<img class="qr-code" src="img/no-phone.svg" height="250px" align="center">
+    <h1><b>Veuillez éteindre vos téléphones.</b></h1>
+    <h4></h4>
+  </div>
+</div>
+				
+				<div class="prayerlist" style="text-align:center;">
+					<div class="col-lg-2" style="background-color: #68575A;height:200px;" >
+						<div class="text _0 ar" data-text="sobh"></div>
+						<div class="sobh" style="font-size:300%;"></div>
+						<div class="wait _0" style="font-size:150%;"></div>
+					</div>
+                    <div class="col-lg-2" style="background-color: #270B28;height:200px;" >
+						<div class="text _1 ar" data-text="zuhr"></div>
+						<div class="dohr" style="font-size:300%;"></div>
+                        <div class="wait _1" style="font-size:150%;"></div>
+					</div>
+					<div class="col-lg-2" style="background-color: #939B87;height:200px;" >
+						<div class="text _2 ar" data-text="asr"></div>
+						<div class="asr"  style="font-size:300%;"></div>
+						<div class="wait _2" style="font-size:150%;"></div>
+					</div>
+					<div class="col-lg-2" style="background-color: #EFC7AA;height:200px;" >
+						 <div class="text _3 ar" data-text="maghrib"></div>
+						 <div class="maghrib"  style="font-size:300%;"></div>
+						 <div class="wait _3" style="font-size:150%;"></div>
+					</div>
+					<div class="col-lg-2" style="background-color: #E56D52;height:200px;" >
+						<div class="text _4 ar" data-text="isha"></div>
+						<div class="ichaa"  style="font-size:300%;"></div>
+						<div class="wait _4" style="font-size:150%;"></div>
+					</div>
+					<div class="col-lg-2" style="background-color: #2A9D8F;height:200px;" >
+						<div class="ar" data-text="joumouaa"></div>
+						<div style="font-size:300%;">13:00</div>
+						<div style="font-size:150%;">30'</div>
+					</div>
                 </div>
 
 				<div class="footer">
-						<div class="col-lg-1" style="background-color: #ff5b4d;">
+						<div class="col-lg-1" style="background-color: #ff5b4d;text-align:center;">
 							<img class="qr-code" src="img/logo_white.svg" height="60px" align="center">
                         </div>
                         <div class="col-lg-11">
@@ -161,9 +84,24 @@
 							">Aïd el-Fitr – Dimanche 25 juin 2017</marquee>
                         </div>
                 </div>
-            </div>
+			</div>
         </div>
+<script>
+var slideIndex = 0;
+carousel();
 
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); 
+}
+</script>
         <script src="js/vendor/jquery.min.js"></script>
         <script src="js/vendor/qrcode.js"></script>
         <script src="js/vendor/jquery.countdown.min.js"></script>

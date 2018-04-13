@@ -44,11 +44,11 @@ body {
 }
 
 .main{
-    width: 98%;    
+    width: 100%;    
 }
 
 .top-content{
-    height:52%;
+    height:20%;
 }
 
 .top-content .adhan-flash,
@@ -227,6 +227,15 @@ body {
     left: 0;
     right:0;
 	background-color: white;
+}
+
+.prayerlist{
+    font-size: 200%;
+    position: absolute;
+    bottom: 60px;
+	height:200px;
+    left: 0;
+    right:0;
 }
 
 .version{
